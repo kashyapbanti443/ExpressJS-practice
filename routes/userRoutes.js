@@ -16,7 +16,7 @@ const { authMiddleware } = require("../middleware/authMiddleware");
 const roleMiddleware = require("../middleware/roleMiddleware");
 
 router.post("/register", registerUser);
-
+// Login
 router.post("/login", login);
 
 // Protected Route
@@ -26,6 +26,7 @@ router.get("/", getUser);
 // Get User By Id
 
 router.get("/:id", getUserById);
+// Update User
 router.put("/:id", updateUser)
 
 // Only Admin Can Delete User
@@ -36,7 +37,7 @@ router.delete(
     deleteUser
 );
 
-
+// Upload File
 const upload =
     require("../middleware/uploadMiddleware");
 
