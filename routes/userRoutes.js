@@ -16,7 +16,7 @@ const { authMiddleware } = require("../middleware/authMiddleware");
 const roleMiddleware = require("../middleware/roleMiddleware");
 
 router.post("/register", registerUser);
-
+// Login
 router.post("/login", login);
 
 // Protected Route
