@@ -23,6 +23,7 @@ router.post("/login", login);
 router.get("/users", authMiddleware, getUser);
 
 router.get("/", getUser);
+// Get User By Id
 
 router.get("/:id", getUserById);
 router.put("/:id", updateUser)
