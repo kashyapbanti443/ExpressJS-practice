@@ -37,7 +37,7 @@ router.delete(
     deleteUser
 );
 
-
+// Upload File
 const upload =
     require("../middleware/uploadMiddleware");
 
