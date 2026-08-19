@@ -26,6 +26,7 @@ router.get("/", getUser);
 // Get User By Id
 
 router.get("/:id", getUserById);
+// Update User
 router.put("/:id", updateUser)
 
 // Only Admin Can Delete User
